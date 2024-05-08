@@ -16,25 +16,25 @@ class CategoriasSeeder extends Seeder
     public function run()
     {
         DB::table('categorias')->insert([
-            'categoria' => 'Backend Developer',
+            'categoria' => 'Servicios de belleza',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
 
         DB::table('categorias')->insert([
-            'categoria' => 'Front end Developer',
+            'categoria' => 'Servicios de carpinteria',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
 
         DB::table('categorias')->insert([
-            'categoria' => 'Mobile Developer',
+            'categoria' => 'Servicios de jardinería',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
 
         DB::table('categorias')->insert([
-            'categoria' => 'Techlead',
+            'categoria' => 'Servicios de lavado de autos',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
@@ -46,13 +46,31 @@ class CategoriasSeeder extends Seeder
         ]);
 
         DB::table('categorias')->insert([
-            'categoria' => 'Software Architecture',
+            'categoria' => 'Servicios de mantenimiento de casa',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
 
         DB::table('categorias')->insert([
-            'categoria' => 'Devops',
+            'categoria' => 'Servicios de limpieza de hogares',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s'),
+        ]);
+
+        DB::table('categorias')->insert([
+            'categoria' => 'Servicios de cerrajería',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s'),
+        ]);
+
+        DB::table('categorias')->insert([
+            'categoria' => 'Servicios de fumigación',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s'),
+        ]);
+
+        DB::table('categorias')->insert([
+            'categoria' => 'Servicios de cuidado de mascotas',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ]);

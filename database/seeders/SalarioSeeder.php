@@ -16,7 +16,13 @@ class SalarioSeeder extends Seeder
     public function run()
     {
         DB::table('salarios')->insert([
-            'salario' => '$0 - $499',
+            'salario' => '$0 - $199',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s'),
+        ]);
+
+        DB::table('salarios')->insert([
+            'salario' => '$200 - $499',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
