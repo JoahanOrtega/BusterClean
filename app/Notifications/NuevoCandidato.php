@@ -33,7 +33,7 @@ class NuevoCandidato extends Notification
      */
     public function via(object $notifiable): array
     {
-        return ['mail','database'];
+        return ['mail', 'database'];
     }
 
     /**
@@ -45,21 +45,21 @@ class NuevoCandidato extends Notification
 
 
         return (new MailMessage)
-                    ->line('Has recibido un nuevo candidato en tu vacante.')
-                    ->line('La vacante es: '.$this->nombre_vacante)
-                    ->action('Ver Notificaciones', $url)
-                    ->line('Gracias por utilizar DevJobs');
+            ->line('Has recibido un nuevo candidato en tu vacante.')
+            ->line('La vacante es: ' . $this->nombre_vacante)
+            ->action('Ver Notificaciones', $url)
+            ->line('Gracias por utilizar BusterClean');
     }
 
     /**
      * Almacena las notificaciones en la DB
      */
-    public function toDatabase($notifiable){
+    public function toDatabase($notifiable)
+    {
         return [
-            'id_vacante' =>$this->id_vacante,
-            'nombre_vacante' =>$this->nombre_vacante,
-            'usuario_id' =>$this->usuario_id,
+            'id_vacante' => $this->id_vacante,
+            'nombre_vacante' => $this->nombre_vacante,
+            'usuario_id' => $this->usuario_id,
         ];
-
     }
 }

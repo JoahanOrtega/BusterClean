@@ -15,10 +15,10 @@
                         <!-- Navigation Links -->
                         <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                             <x-nav-link :href="route('vacantes.index')" :active="request()->routeIs('vacantes.index')">
-                                {{ __('Mis Vacantes') }}
+                                {{ __('Mis servicios') }}
                             </x-nav-link>
                             <x-nav-link :href="route('vacantes.create')" :active="request()->routeIs('vacantes.create')">
-                                {{ __('Crear vacantes') }}
+                                {{ __('Crear servicio') }}
                             </x-nav-link>
                         </div>
                     @endcan
@@ -108,10 +108,10 @@
             @can('create', App\Models\Vacante::class)
                 <div class="pt-2 pb-3 space-y-1">
                     <x-responsive-nav-link :href="route('vacantes.index')" :active="request()->routeIs('vacantes.index')">
-                        {{ __('Mis Vacantes') }}
+                        {{ __('Mis Servicios') }}
                     </x-responsive-nav-link>
                     <x-responsive-nav-link :href="route('vacantes.create')" :active="request()->routeIs('vacantes.create')">
-                        {{ __('Crear Vacante') }}
+                        {{ __('Crear Servicio') }}
                     </x-responsive-nav-link>
 
                     @if (auth()->user()->rol === 2)
@@ -122,10 +122,7 @@
                                 {{ auth()->user()->unreadNotifications->count() }}
                             </a>
                             <p class="text-base font-medium text-gray-600">
-                                @choice(
-                                    'Notificacion|Notificaciones',
-                                    auth()->user()->unreadNotifications->count()
-                                )
+                                @choice('Notificacion|Notificaciones', auth()->user()->unreadNotifications->count())
 
                             </p>
                         </div>

@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Mis Vacantes') }}
+            {{ __('Mis Servicios') }}
         </h2>
     </x-slot>
 
@@ -10,11 +10,11 @@
 
             @if (session()->has('mensaje'))
                 <div class="uppercase border border-green-600 bg-green-100 text-green-600 font-bold p-2 my-3 text-sm">
-                    {{session('mensaje')}}
+                    {{ session('mensaje') }}
                 </div>
             @endif
 
-            <livewire:mostrar-vacantes/>
+            <livewire:mostrar-vacantes />
         </div>
     </div>
 </x-app-layout>

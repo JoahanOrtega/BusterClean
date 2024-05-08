@@ -10,7 +10,7 @@
 
         <form action="" class="w-96 mt-5" wire:submit.prevent='postularme'>
             <div class="mb-4">
-                <x-input-label for="cv" :value="__('Curriculum u hoja de vida (PDF)')" />
+                <x-input-label for="cv" :value="__('Información sobre el lugar (PDF)')" />
                 <x-text-input id="cv" type="file" wire:model="cv" accept=".pdf" class="block mt-1 w-full" />
 
             </div>
@@ -20,7 +20,7 @@
             @enderror
 
             <x-primary-button class="my-5">
-                {{ __('Postularme') }}
+                {{ __('Solicitar') }}
             </x-primary-button>
 
         </form>

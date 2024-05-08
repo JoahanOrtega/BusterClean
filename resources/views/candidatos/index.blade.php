@@ -10,7 +10,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                     <h1 class="text-2xl font-bold text-center my-10">
-                        Candidatos Vacante:{{ $vacante->titulo }}
+                        Interesados en: {{ $vacante->titulo }}
                     </h1>
 
                     <div class="md:flex md:justify-center p-5">
@@ -21,24 +21,22 @@
                                         <p class="text-xl font-medium text-gray-800">{{ $candidato->user->name }} </p>
                                         <p class="text-sm text-gray-600">{{ $candidato->user->email }} </p>
                                         <p class="text-sm font-medium text-gray-600">
-                                            Se postulo <span class="font-normal">{{ $candidato->user->created_at->diffForHumans() }}</span>
+                                            Se postulo <span
+                                                class="font-normal">{{ $candidato->user->created_at->diffForHumans() }}</span>
                                         </p>
                                     </div>
-                                        <a
-                                            class="inline-flex items-center shadow-sm px-2 py-1 border border-gray-300 text-sm
+                                    <a class="inline-flex items-center shadow-sm px-2 py-1 border border-gray-300 text-sm
                                             leading-5 font-medium rounded-full text-gray-700 bg-white hover:bg-gray-50"
-                                            href="{{asset('/storage/cv/'.$candidato->cv)}}"
-                                            target="_blank"
-                                            rel="noreferrer noopener"
-                                        >
-                                            Ver CV
-                                        </a>
+                                        href="{{ asset('/storage/cv/' . $candidato->cv) }}" target="_blank"
+                                        rel="noreferrer noopener">
+                                        Ver más
+                                    </a>
                                     <div>
 
                                     </div>
                                 </li>
                             @empty
-                                <p class="p-3 text-center text-sm text-gray-600">No hay candidatos</p>
+                                <p class="p-3 text-center text-sm text-gray-600">No hay servicios actualmente</p>
                             @endforelse
                         </ul>
                     </div>
