@@ -6,7 +6,7 @@
         </h3>
 
         <div class="md:grid md:grid-cols-2 bg-gray-50 p-4 my-10">
-            <p class="font-bold text-sm uppercase text-gray-800 my-3">Empresa:
+            <p class="font-bold text-sm uppercase text-gray-800 my-3">Colonia:
                 <span class="normal-case font-normal">{{ $vacante->empresa }}</span>
             </p>
 

@@ -40,12 +40,6 @@ class CategoriasSeeder extends Seeder
         ]);
 
         DB::table('categorias')->insert([
-            'categoria' => 'UX / UI Design',
-            'created_at' => date('Y-m-d H:i:s'),
-            'updated_at' => date('Y-m-d H:i:s'),
-        ]);
-
-        DB::table('categorias')->insert([
             'categoria' => 'Servicios de mantenimiento de casa',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),

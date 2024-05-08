@@ -47,10 +47,10 @@
 
     <!-- Empresa -->
     <div>
-        <x-input-label for="empresa" :value="__('Empresa')" />
+        <x-input-label for="empresa" :value="__('Colonia')" />
 
         <x-text-input id="empresa" class="block mt-1 w-full" type="text" wire:model="empresa" :value="old('empresa')"
-            placeholder="Empresa" />
+            placeholder="Colonia" />
 
         @error('empresa')
             <livewire:mostrar-alerta :message="$message" />
