@@ -12,7 +12,8 @@ class FiltrarVacantes extends Component
     public $categoria;
     public $salario;
 
-    public function leerDatosFormulario(){
+    public function leerDatosFormulario()
+    {
         $this->emit('terminosBusqueda', $this->termino, $this->categoria, $this->salario);
     }
 
@@ -21,7 +22,7 @@ class FiltrarVacantes extends Component
         $salarios = Salario::all();
         $categorias = Categoria::all();
 
-        return view('livewire.filtrar-vacantes',[
+        return view('livewire.filtrar-vacantes', [
             'salarios' => $salarios,
             'categorias' => $categorias
         ]);
