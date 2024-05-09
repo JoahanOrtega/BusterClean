@@ -32,17 +32,6 @@
             </label>
         </div>
 
-        Al crear una cuenta, aceptas las
-        <x-link href="{{ asset('/storage/policies/policies.pdf') }}" target="_blank" rel="noreferrer noopener ">
-            <strong>Condiciones de Uso</strong>
-        </x-link>
-        y el
-        <x-link href="{{ asset('/storage/policies/policies.pdf') }}" target="_blank" rel="noreferrer noopener">
-            <strong>Aviso de Privacidad</strong>
-        </x-link>
-        de BusterClean
-
-
         <div class="flex justify-between my-5">
             <x-link :href="route('register')">
                 Crear cuenta
